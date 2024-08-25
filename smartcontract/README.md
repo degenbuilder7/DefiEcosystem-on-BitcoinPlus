@@ -1,13 +1,26 @@
-# Sample Hardhat Project
+# BTCPlus DEX contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Compiling the contract
 
-Try running some of the following tasks:
+Use the following command to compile the contract:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+```bash
+npx hardhat build
 ```
+
+## Deploying the contract
+
+Use the following command to deploy the contract to any EVM chain:
+
+```bash
+npx hardhat deploy
+```
+
+
+### Changes Made in V2:
+1. **Added Mapping for Token Reserves**: `mapping(address => uint256) public tokenReserves;` to keep track of reserves for each token.
+2. **Added Mapping for Liquidity**: `mapping(address => mapping(address => uint256)) public liquidity;` to keep track of liquidity provided by each user for each token.
+3. **Modified Functions to Accept Token Address**: Updated functions `addLiquidity`, `removeLiquidity`, `swapEthToToken`, and `swapTokenToEth` to accept a token address parameter.
+4. **Updated Events**: Modified events to include token address.
+
+These changes allow the contract to support multiple tokens by dynamically managing token reserves and user liquidity for each token.
