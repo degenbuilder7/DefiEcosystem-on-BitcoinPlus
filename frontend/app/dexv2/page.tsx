@@ -15,8 +15,8 @@ const BTCPLUSDEXV2: NextPage = () => {
   });
 
   const TOKENS = [
-    { symbol: "DUSDC", address: "0x2AAC535db31DB35D13AECe36Ea7954A2089D55bE" },
-    { symbol: "DUSDT", address: "0xE71D50B4Ecbfbe137aEf99247193d2c322bacEA2" },
+    { symbol: "USDC", address: "0x2AAC535db31DB35D13AECe36Ea7954A2089D55bE" },
+    { symbol: "USDT", address: "0xE71D50B4Ecbfbe137aEf99247193d2c322bacEA2" },
   ];
 
   const DEX_CONTRACT_ADDRESS = "0x311C424046c1679274D54663e7e4A054Af0Babb0";
