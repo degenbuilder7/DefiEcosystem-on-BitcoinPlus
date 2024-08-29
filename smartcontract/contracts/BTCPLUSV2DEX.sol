@@ -4,6 +4,13 @@ pragma solidity ^0.8.7;
 import "@thirdweb-dev/contracts/base/ERC20Base.sol";
 
 contract BTCPLUSV2DEX is ERC20Base {
+
+    
+    constructor (uint256 _feePercent) ERC20Base(msg.sender, "BTCPLUSV2DEX", "BTCDXV2") {
+        feePercent = _feePercent;
+    }
+
+    
     uint256 public feePercent; // Fee percentage in basis points (100 basis points = 1%)
 
     mapping(address => uint256) public tokenReserves; // Mapping from token address to reserves
@@ -12,10 +19,6 @@ contract BTCPLUSV2DEX is ERC20Base {
     event LiquidityAdded(address indexed provider, address indexed token, uint256 amountEth, uint256 amountToken);
     event LiquidityRemoved(address indexed provider, address indexed token, uint256 amountEth, uint256 amountToken);
     event Swapped(address indexed swapper, address indexed token, uint256 amountIn, uint256 amountOut, string direction);
-
-    constructor (uint256 _feePercent) ERC20Base(msg.sender, "DCHAINV2DEX", "DCDXV2") {
-        feePercent = _feePercent;
-    }
 
     function getTokensInContract(address token) public view returns (uint256) {
         return ERC20Base(token).balanceOf(address(this));
