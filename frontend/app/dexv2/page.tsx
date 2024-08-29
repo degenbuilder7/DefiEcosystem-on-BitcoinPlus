@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import SwapInputWithTokenSwitch from "@/components/SwapInputWithTokenSwitch";
 import { createThirdwebClient, defineChain, getContract, prepareContractCall, sendTransaction, toEther, toWei } from "thirdweb";
 import SwapInput from "@/components/SwapInput";
+import Navbar from "@/components/Navbar";
 
 const BTCPLUSDEXV2: NextPage = () => {
 
@@ -163,6 +164,8 @@ const BTCPLUSDEXV2: NextPage = () => {
   }, [amountToGet]);
 
   return (
+    <>
+    <Navbar />
     <main className={styles.main}>
       <div className={styles.container}>
         <div style={{
@@ -216,6 +219,7 @@ const BTCPLUSDEXV2: NextPage = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 

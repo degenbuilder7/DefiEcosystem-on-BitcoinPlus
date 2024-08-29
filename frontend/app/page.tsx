@@ -19,7 +19,7 @@ export default function Component() {
             Advantages
           </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="/dexlanding">
-            Get Started with BTCPlusDEX
+            Get Started
           </Link>
         </nav>
       </header>
@@ -37,7 +37,7 @@ export default function Component() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-orange-600 text-white hover:bg-orange-700">Get Started</Button>
+                <Link href="/dexlanding" ><Button className="bg-orange-600 text-white hover:bg-orange-700">Get Started</Button></Link>
                 <Button variant="outline">Learn More</Button>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Component() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Innovative DeFi Solutions</h3>
                   <p className="text-gray-700">
-                    Experience cutting-edge DeFi features powered by Runes and BRC-20 tokens, pushing the boundaries of what's possible in decentralized finance.
+                    Experience cutting-edge DeFi features powered by Runes and BRC-20 tokens, pushing the boundaries of what is possible in decentralized finance.
                   </p>
                 </div>
               </div>
