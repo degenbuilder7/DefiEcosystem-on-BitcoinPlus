@@ -1,7 +1,10 @@
+import Navbar from "@/components/Navbar"
 import Link from "next/link"
 
 export default function DEXLanding() {
   return (
+    <>
+    <Navbar />
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
@@ -165,6 +168,7 @@ export default function DEXLanding() {
         </section>
       </main>
     </div>
+    </>
   )
 }
 

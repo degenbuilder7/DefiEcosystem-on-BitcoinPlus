@@ -42,7 +42,6 @@ export default function RootLayout({
         )}
       >
         <ThirdwebProvider>
-          <Navbar />
           {children}
       </ThirdwebProvider>
       </body>
