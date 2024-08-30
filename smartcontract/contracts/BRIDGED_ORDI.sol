@@ -3,10 +3,10 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract USDT is ERC20 {
+contract BRIDGED_ORDI is ERC20 {
     address private owner;
 
-    constructor(uint256 initialSupply) ERC20("BTCPLUSCHAIN TOKEN", "USDT") {
+    constructor(uint256 initialSupply) ERC20("BRIDGED ORDI", "ORDI") {
         _mint(msg.sender, initialSupply);
         owner = msg.sender;
     }

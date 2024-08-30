@@ -3,10 +3,10 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract USDC is ERC20 {
+contract BRIDGED_SATS is ERC20 {
     address private owner;
 
-    constructor(uint256 initialSupply) ERC20("BTCPlusUSDC", "USDC") {
+    constructor(uint256 initialSupply) ERC20("BRIDGED_SATS", "SATS") {
         _mint(msg.sender, initialSupply);
         owner = msg.sender;
     }
