@@ -82,6 +82,10 @@ BTCPLUSV1DEX - 0x42CCc04D3557A7fbC2f2F7Cbe41869834c373896
 - `swapEthToToken(address token, uint256 minTokens)`: Swaps ETH for the specified token, ensuring the minimum token amount.
 - `swapTokenToEth(address token, uint256 _tokensSold, uint256 minEth)`: Swaps the specified token for ETH, ensuring the minimum ETH amount.
 
+### BTC ORDINALS Lending HUB
+
+![image](https://github.com/user-attachments/assets/7bb16fa2-7d4d-46ae-8a81-0c195f0122ab)
+
 ## Installation
 
 1. **Clone the repository**:
