@@ -8,6 +8,12 @@
 
 BTC+DEX is a decentralized exchange (DEX) platform designed to provide a seamless and user-friendly experience for swapping tokens. Built with robust blockchain technology, BTC+DEX allows users to exchange ETH for various tokens and vice versa, ensuring transparency, security, and efficiency in every transaction.
 
+## Contract Address on BitcoinPlus
+
+BRIDGED_ORDI - 0xC5d579C8948f7Cfa2ec2A931bDB81Fe421427b0c
+BRIDGED_SATS - 0xC5d579C8948f7Cfa2ec2A931bDB81Fe421427b0c
+
+BTCPLUSV1DEX - 0x42CCc04D3557A7fbC2f2F7Cbe41869834c373896
 
 ## Features
 

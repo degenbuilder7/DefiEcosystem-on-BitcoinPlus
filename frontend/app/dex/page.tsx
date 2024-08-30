@@ -13,22 +13,22 @@ const BTCPLUSDEX: NextPage = () => {
     clientId: process.env.NEXT_PUBLIC_CLIENT_ID!,
   });
 
-  const TOKEN_CONTRACT_ADDRESS = "0x2AAC535db31DB35D13AECe36Ea7954A2089D55bE";
-  const DEX_CONTRACT_ADDRESS = "0x311C424046c1679274D54663e7e4A054Af0Babb0";
-  // earlier v1 0xB86800BA7D0b25309726511f54F1e3D92457a8E4
+  const TOKEN_CONTRACT_ADDRESS = "0x16ede5c93258e5cb630d222c2E81799aA59C846C"; // BRIDGED SATS
+  const DEX_CONTRACT_ADDRESS = "0x3cD09816A30D7C5B36eC64Bde373c770e52e6D5F";
+
 
   const activeAccount = useActiveAccount();
   const address = activeAccount?.address;
 
   const dexContract = getContract({ 
     client, 
-    chain: defineChain(2713017997578000), 
+    chain: defineChain(21000001), 
     address: DEX_CONTRACT_ADDRESS
   });
 
   const tokenContract = getContract({
     client,
-    chain: defineChain(2713017997578000),
+    chain: defineChain(21000001),
     address: TOKEN_CONTRACT_ADDRESS
   });
 
@@ -48,7 +48,7 @@ const BTCPLUSDEX: NextPage = () => {
 
   // Get native balance and LP token balance
   const { data: nativeBalance, isError } = useWalletBalance({
-    chain: defineChain(2713017997578000),
+    chain: defineChain(21000001),
     address,
     client,
     // tokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
@@ -60,7 +60,7 @@ const BTCPLUSDEX: NextPage = () => {
     contract: dexContract, 
     method: "function getTokensInContract(address token) view returns (uint256)", 
     params: [TOKEN_CONTRACT_ADDRESS] 
-  });
+});
 
   console.log(contractTokenBalance,"contract tken balance", contractTokenBalance?.toString());
 

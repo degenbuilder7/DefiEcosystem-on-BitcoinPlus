@@ -37,9 +37,9 @@ export default function DEXLanding() {
                   </Link>
                 </div>
               </div>
-              <div className="mx-auto  overflow-hidden rounded-xl object-contain sm:w-full lg:order-last lg:aspect-square">
+              <div className="mx-auto  overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square">
                 <img
-                  src="/landing.png"
+                  src="/liquidity.jpg"
                   width="550"
                   height="550"
                   alt="Hero"
@@ -90,31 +90,31 @@ export default function DEXLanding() {
                   </p>
                 </div>
               </div>
-              <div className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full">
+              <div className="mx-auto aspect-video overflow-hidden rounded-xl object-contain object-center sm:w-full">
                 <img
-                  src="/landing.png"
+                  src="/bitcoinplus.png"
                   width="550"
                   height="310"
                   alt="Liquidity Management"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <div className="mx-auto overflow-hidden rounded-xl object-contain object-center sm:w-full lg:order-last">
                 <img
-                  src="/ethtotoken.png"
+                  src="/tokentobtc.png"
                   width="550"
                   height="310"
-                  alt="Token to ETH Conversion"
+                  alt="Token to BTC Conversion"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Token to ETH Conversion</h3>
+                  <h3 className="text-xl font-bold">Token to BTC Conversion</h3>
                   <p className="text-muted-foreground">
-                    Convert any token on the BTCPlus network to Ethereum (ETH) with just a few clicks.
+                    Convert any token on the BTCPlus network to Bitcoin (BTC) with just a few clicks.
                   </p>
                 </div>
               </div>

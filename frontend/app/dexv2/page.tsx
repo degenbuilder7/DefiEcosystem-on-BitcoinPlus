@@ -15,8 +15,8 @@ const BTCPLUSDEXV2: NextPage = () => {
   });
 
   const TOKENS = [
-    { symbol: "USDC", address: "0x2AAC535db31DB35D13AECe36Ea7954A2089D55bE" },
-    { symbol: "USDT", address: "0xE71D50B4Ecbfbe137aEf99247193d2c322bacEA2" },
+    { symbol: "BRIDGED_ORDI", address: "0xC5d579C8948f7Cfa2ec2A931bDB81Fe421427b0c" },
+    { symbol: "BRIDGED_SATS", address: "0x16ede5c93258e5cb630d222c2E81799aA59C846C" },
   ];
 
   const DEX_CONTRACT_ADDRESS = "0x311C424046c1679274D54663e7e4A054Af0Babb0";
@@ -33,13 +33,13 @@ const BTCPLUSDEXV2: NextPage = () => {
 
   const dexContract = getContract({ 
     client, 
-    chain: defineChain(2713017997578000), 
+    chain: defineChain(21000001), 
     address: DEX_CONTRACT_ADDRESS
   });
 
   const tokenContract = getContract({
     client,
-    chain: defineChain(2713017997578000),
+    chain: defineChain(21000001),
     address: selectedToken.address
   });
 
@@ -56,7 +56,7 @@ const BTCPLUSDEXV2: NextPage = () => {
   });
 
   const { data: nativeBalance, isError } = useWalletBalance({
-    chain: defineChain(2713017997578000),
+    chain: defineChain(21000001),
     address,
     client,
   });

@@ -18,7 +18,7 @@ export default function Component() {
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#why-choose">
             Why Choose Us
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#get-started">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/dexlanding">
             Get Started
           </Link>
         </nav>
@@ -29,10 +29,10 @@ export default function Component() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Welcome to Bitcoin+: The Future of Decentralized Finance
+                  Welcome to Bitcoin+ Defi: The Future of Defi is here
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
-                  Unlock the power of Bitcoin+. Experience a revolutionary decentralized finance (DeFi) platform built on the Bitcoin+ ecosystem.
+                  Unlocking the power of Bitcoin+. Experience a revolutionary decentralized finance (DeFi) platform built on the Bitcoin+ ecosystem.
                   Our innovative solutions empower users to trade, lend, and borrow with unparalleled efficiency and security.
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function Component() {
         <section id="why-choose" className="w-full py-12 md:py-24 lg:py-32 bg-orange-50">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              Why Choose Bitcoin+?
+              Why Choose Defi on Bitcoin+?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-start space-x-4">
