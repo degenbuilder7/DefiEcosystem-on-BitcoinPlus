@@ -76,6 +76,10 @@ BTC+DEX is a decentralized exchange (DEX) platform designed to provide a seamles
 - `swapEthToToken(address token, uint256 minTokens)`: Swaps ETH for the specified token, ensuring the minimum token amount.
 - `swapTokenToEth(address token, uint256 _tokensSold, uint256 minEth)`: Swaps the specified token for ETH, ensuring the minimum ETH amount.
 
+### BTC ORDINALS Lending HUB
+
+![image](https://github.com/user-attachments/assets/7bb16fa2-7d4d-46ae-8a81-0c195f0122ab)
+
 ## Installation
 
 1. **Clone the repository**:
